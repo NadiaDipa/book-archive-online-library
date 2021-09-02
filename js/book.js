@@ -9,7 +9,7 @@ const searchBook = () => {
     searchField.value = '';
 
     if (searchText === '') {
-        alert('No found');
+        alert('Search field cannot be empty!');
     } else {
         let url = `http://openlibrary.org/search.json?q=${searchText}`;
         fetch(url)
@@ -31,7 +31,7 @@ const displaySearchResult = books => {
     searchResult.textContent = '';
 
     if (totalItemSize === 0) {
-        searchResult.innerText = 'errrroooooooooorrrrrrrr';
+        searchResult.innerText = 'No Result Found';
     }
     books.forEach(book => {
         const div = document.createElement('div');
