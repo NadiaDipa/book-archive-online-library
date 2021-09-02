@@ -31,7 +31,7 @@ const displaySearchResult = books => {
     searchResult.textContent = '';
 
     if (totalItemSize === 0) {
-        searchResult.innerText = 'No Result Found';
+        searchResult.innerText = 'No Result Found...';
     }
     books.forEach(book => {
         const div = document.createElement('div');
