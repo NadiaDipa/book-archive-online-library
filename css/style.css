@@ -1,0 +1,14 @@
+body{
+    background-color: wheat;
+}
+.tomato-color{
+    color: tomato;
+}
+.button-border{
+    border: 1px solid black;
+}
+.btn-color{
+    background-color: tomato;
+    color: white;
+    font-weight: bold;
+}
