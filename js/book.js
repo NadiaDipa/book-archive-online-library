@@ -7,7 +7,7 @@ const searchBook = () => {
 
     // clear data 
     searchField.value = '';
-
+    // error handling
     if (searchText === '') {
         alert('Search field cannot be empty!');
     } else {
@@ -29,7 +29,7 @@ const displaySearchResult = books => {
 
     const searchResult = document.getElementById('search-result'); //div
     searchResult.textContent = '';
-
+    // error handling
     if (totalItemSize === 0) {
         searchResult.innerText = 'No Result Found...';
     }
